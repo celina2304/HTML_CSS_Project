@@ -7,7 +7,7 @@
 /* Global */
 body{
     font-family: "Merriweather", sans-serif; 
-    background-color: #ebf2ff;
+    background-color: #dbe5f8;
 }
 
 .button__primary{
@@ -51,6 +51,7 @@ body{
 .hero__container{
     width: 100%;
     padding: 0 10px;
+    margin-bottom: 30px;
 }
 
 .hero__image__container{
@@ -70,7 +71,6 @@ body{
 
 .hero__description{
     width: 100%;
-    margin: 50px 0;
     padding: 0 7px;
 }
 
@@ -109,6 +109,7 @@ body{
     width: 100%;
     background-color: #fff;
     border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 .food__image{
@@ -164,7 +165,7 @@ body{
 
 .stay__updated__container{
     width: 100%;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 .stay__updated__text{
@@ -191,6 +192,30 @@ body{
     border-radius: 3px;
     width: 100%;
 }
+
+/* Quote */
+.quote__container{
+    width: 100%;
+    margin: 20px 0;
+    position: relative;
+}
+
+.quote__text{
+    font-weight: 500;
+    position: absolute;
+    color: #ebf2ff;
+    text-align: center;
+    top: 13px;
+    font-size: 18px;
+    opacity: 90%;
+}
+
+.quote__image{
+    width: 100%;
+    z-index: -2;
+    border-radius: 7px;
+}
+
 
 @media(min-width: 768px){
     .container{
@@ -276,16 +301,33 @@ body{
         align-items: center;
     }
     .stay__updated__text{
-        width: 50%;
+        width: 70%;
     }
     .stay__updated__info{
-        width: 50%;
+        width: 70%;
         justify-content: center;
     }
     .stay__updated__button{
-        width: 40%;
+        width: 25%;
     }
-    
+    .quote__container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .quote__text{
+        width: 70%;
+        top: 40px;
+        font-size: 23px;
+    }
+    .quote__bg__image{
+        display: flex;
+        justify-content: center;
+
+    }
+    .quote__image{
+        width: 70%;
+    }
 }
 
 @media(min-width: 1020px){
@@ -313,6 +355,9 @@ body{
     .stay__updated__button{
         width: 27%;
     }
+    .quote__text{
+        top: 60px;
+    }
 }
 
 @media(min-width: 1400px){
@@ -337,7 +382,20 @@ body{
     .restaurants__container{
         height: 200%;
     }
+    .stay__updated__container{
+        margin: 50px 0;
+    }
+    .stay__updated__text{
+        font-size: 35px;
+    }
     .stay__updated__button{
         width: 20%;
+    }
+    .quote__container{
+        margin: 70px 0;
+    }
+    .quote__text{
+        top: 80px;
+        font-size: 30px;
     }
 }
